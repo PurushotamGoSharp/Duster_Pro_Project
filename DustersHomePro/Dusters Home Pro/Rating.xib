@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingView">
+            <connections>
+                <outlet property="ratingSelect1" destination="W5h-r4-4pT" id="Jtp-hW-1gu"/>
+                <outlet property="ratingSelect2" destination="Mf2-x6-ub0" id="0us-1K-yrm"/>
+                <outlet property="ratingSelect3" destination="AIA-Jn-jwN" id="NpY-p8-jsu"/>
+                <outlet property="ratingSelect4" destination="BaC-HC-5jx" id="n49-db-aRG"/>
+                <outlet property="ratingSelect5" destination="bnp-yw-Zgh" id="7yc-iz-Jjs"/>
+                <outlet property="ratingTextView" destination="b8D-Cb-enn" id="w3y-E2-YLh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8D-Cb-enn">
+                    <rect key="frame" x="0.0" y="54" width="300" height="94"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="94" id="VAw-Kx-LdQ"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="xav-rg-Fe5"/>
+                    </connections>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5h-r4-4pT">
+                    <rect key="frame" x="33" y="10" width="43" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Tcf-ka-gFU"/>
+                        <constraint firstAttribute="width" constant="43" id="t2F-M7-zIy"/>
+                    </constraints>
+                    <state key="normal" image="Rating-star-unselected">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="Rating-star-selected"/>
+                    <connections>
+                        <action selector="ratingSelect1:" destination="-1" eventType="touchUpInside" id="6g9-a8-mh7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf2-x6-ub0">
+                    <rect key="frame" x="81" y="10" width="43" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="43" id="X2c-Qh-di7"/>
+                        <constraint firstAttribute="height" constant="34" id="psW-7i-YfF"/>
+                    </constraints>
+                    <state key="normal" image="Rating-star-unselected">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="Rating-star-selected"/>
+                    <connections>
+                        <action selector="ratingSelect2:" destination="-1" eventType="touchUpInside" id="HyK-ej-MMU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIA-Jn-jwN">
+                    <rect key="frame" x="129" y="10" width="43" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="ox1-Gf-2Ar"/>
+                        <constraint firstAttribute="width" constant="43" id="s8t-Mr-s6c"/>
+                    </constraints>
+                    <state key="normal" image="Rating-star-unselected">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="Rating-star-selected"/>
+                    <connections>
+                        <action selector="ratingSelect3:" destination="-1" eventType="touchUpInside" id="uQM-nT-xtx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaC-HC-5jx">
+                    <rect key="frame" x="177" y="10" width="43" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="1CB-54-sI1"/>
+                        <constraint firstAttribute="width" constant="43" id="bf2-Rw-qWE"/>
+                    </constraints>
+                    <state key="normal" image="Rating-star-unselected">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="Rating-star-selected"/>
+                    <connections>
+                        <action selector="ratingSelect4:" destination="-1" eventType="touchUpInside" id="1zX-mr-Upx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnp-yw-Zgh">
+                    <rect key="frame" x="225" y="10" width="43" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="43" id="4yq-Na-c8i"/>
+                        <constraint firstAttribute="height" constant="34" id="eEk-mf-8Mt"/>
+                    </constraints>
+                    <state key="normal" image="Rating-star-unselected">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="Rating-star-selected"/>
+                    <connections>
+                        <action selector="ratingSelect5:" destination="-1" eventType="touchUpInside" id="8mM-b2-elD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="b8D-Cb-enn" secondAttribute="trailing" id="3aQ-CW-nBj"/>
+                <constraint firstItem="b8D-Cb-enn" firstAttribute="top" secondItem="AIA-Jn-jwN" secondAttribute="bottom" constant="10" id="9Oh-38-wsm"/>
+                <constraint firstItem="bnp-yw-Zgh" firstAttribute="leading" secondItem="BaC-HC-5jx" secondAttribute="trailing" constant="5" id="JTx-fd-x9D"/>
+                <constraint firstItem="b8D-Cb-enn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="L1N-hR-7Dt"/>
+                <constraint firstItem="BaC-HC-5jx" firstAttribute="leading" secondItem="AIA-Jn-jwN" secondAttribute="trailing" constant="5" id="MGf-sb-ykS"/>
+                <constraint firstItem="AIA-Jn-jwN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="NTa-r8-7Q6"/>
+                <constraint firstAttribute="centerX" secondItem="AIA-Jn-jwN" secondAttribute="centerX" id="QFg-oK-MCM"/>
+                <constraint firstItem="bnp-yw-Zgh" firstAttribute="top" secondItem="BaC-HC-5jx" secondAttribute="top" id="YUj-4m-QRC"/>
+                <constraint firstItem="Mf2-x6-ub0" firstAttribute="leading" secondItem="W5h-r4-4pT" secondAttribute="trailing" constant="5" id="baU-es-LLU"/>
+                <constraint firstItem="Mf2-x6-ub0" firstAttribute="top" secondItem="W5h-r4-4pT" secondAttribute="top" id="eiG-CM-iOF"/>
+                <constraint firstItem="Mf2-x6-ub0" firstAttribute="top" secondItem="AIA-Jn-jwN" secondAttribute="top" id="lWV-bm-csg"/>
+                <constraint firstItem="AIA-Jn-jwN" firstAttribute="leading" secondItem="Mf2-x6-ub0" secondAttribute="trailing" constant="5" id="nIx-It-4Ko"/>
+                <constraint firstItem="BaC-HC-5jx" firstAttribute="top" secondItem="AIA-Jn-jwN" secondAttribute="top" id="pjg-y6-jsl"/>
+                <constraint firstAttribute="bottom" secondItem="b8D-Cb-enn" secondAttribute="bottom" id="wIV-wx-OWE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wIV-wx-OWE"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="111" y="-2"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Rating-star-selected" width="22" height="22"/>
+        <image name="Rating-star-unselected" width="22" height="22"/>
+    </resources>
+</document>

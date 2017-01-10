@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectCityClass">
+            <connections>
+                <outlet property="selectCityCell" destination="9yV-6S-nou" id="dgC-md-lPb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="55" id="9yV-6S-nou" customClass="SelectCityTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9yV-6S-nou" id="LQt-5X-BjS">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udx-Oc-9Kt">
+                        <rect key="frame" x="32" y="16" width="316" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Udx-Oc-9Kt" firstAttribute="leading" secondItem="LQt-5X-BjS" secondAttribute="leadingMargin" constant="24" id="AYV-1q-JRg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Udx-Oc-9Kt" secondAttribute="bottom" constant="9" id="eN5-GK-Xuc"/>
+                    <constraint firstItem="Udx-Oc-9Kt" firstAttribute="top" secondItem="LQt-5X-BjS" secondAttribute="topMargin" constant="8" id="iAQ-hx-bX8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Udx-Oc-9Kt" secondAttribute="trailing" constant="20" id="w30-0M-aG1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cityLabel" destination="Udx-Oc-9Kt" id="Y3g-rF-sab"/>
+            </connections>
+            <point key="canvasLocation" x="643" y="518.5"/>
+        </tableViewCell>
+    </objects>
+</document>

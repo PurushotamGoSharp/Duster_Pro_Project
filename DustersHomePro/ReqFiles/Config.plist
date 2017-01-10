@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ACC_ID</key>
+	<string>18994</string>
+	<key>SECRET_KEY</key>
+	<string>1f25601e0fe4a120dd09fe641dc799d2</string>
+	<key>ALGORITHM</key>
+	<string>0</string>
+	<key>MODE</key>
+	<string>LIVE</string>
+	<key>NSLog_Enable</key>
+	<string>1</string>
+	<key>CANCEL_VIEWCONTROLLER</key>
+	<string>PaymentSuccessViewController</string>
+	<key>THANKYOUVIEWCONTROLLER</key>
+	<string>PaymentSuccessViewController</string>
+	<key>TRANSACTION_MESSAGE</key>
+	<string>Transaction has been cancelled</string>
+	<key>SHOW_REFERENCE</key>
+	<string>1</string>
+	<key>BUTTON_BG_COLOR</key>
+	<dict>
+		<key>Red</key>
+		<string>51.0</string>
+		<key>Green</key>
+		<string>82.0</string>
+		<key>Blue</key>
+		<string>136.0</string>
+		<key>alpha</key>
+		<string>1.0</string>
+	</dict>
+	<key>HEADING_BG_COLOR</key>
+	<dict>
+		<key>Red</key>
+		<string>51.0</string>
+		<key>Green</key>
+		<string>82.0</string>
+		<key>Blue</key>
+		<string>136.0</string>
+		<key>alpha</key>
+		<string>1.0</string>
+	</dict>
+	<key>NAVIGATIONBARCOLOR</key>
+	<dict>
+		<key>Red</key>
+		<string>51.0</string>
+		<key>Green</key>
+		<string>82.0</string>
+		<key>Blue</key>
+		<string>136.0</string>
+		<key>Alpha</key>
+		<string>1.0</string>
+	</dict>
+	<key>PAGE_ID</key>
+	<string></string>
+</dict>
+</plist>

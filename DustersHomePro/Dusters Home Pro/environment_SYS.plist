@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   environment_SYS.plist
+   Dusters Home Pro
+
+   Created by Vmoksha on 05/04/16.
+   Copyright (c) 2016 shruthib. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>environment</key>
+        <string>SYS</string>
+        <key>appName</key>
+        <string>SYS</string>
+    </dict>
+</plist>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectTime">
+            <connections>
+                <outlet property="tableView" destination="4L5-6s-lvI" id="5cF-ty-BAu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SelectTime">
+            <rect key="frame" x="0.0" y="0.0" width="237" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4L5-6s-lvI">
+                    <rect key="frame" x="0.0" y="50" width="237" height="130"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="9Yx-02-EKJ"/>
+                        <outlet property="delegate" destination="-1" id="UtR-dT-Ekb"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3s-b7-T57">
+                    <rect key="frame" x="70" y="8" width="97" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="97" id="WUL-NI-Pbd"/>
+                        <constraint firstAttribute="height" constant="33" id="YrS-WT-382"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3RA-cw-SSE">
+                    <rect key="frame" x="12" y="41" width="213" height="1"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="C3r-Td-61X"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4L5-6s-lvI" firstAttribute="top" secondItem="3RA-cw-SSE" secondAttribute="bottom" constant="8" id="1Xt-Rl-eWv"/>
+                <constraint firstAttribute="trailing" secondItem="4L5-6s-lvI" secondAttribute="trailing" id="91a-QR-doq"/>
+                <constraint firstItem="3RA-cw-SSE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Ci0-Nx-ujQ"/>
+                <constraint firstItem="4L5-6s-lvI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GRg-fB-7VF"/>
+                <constraint firstItem="3RA-cw-SSE" firstAttribute="top" secondItem="u3s-b7-T57" secondAttribute="bottom" id="Iwu-ON-ri4"/>
+                <constraint firstAttribute="centerX" secondItem="u3s-b7-T57" secondAttribute="centerX" id="Ve1-MF-fNc"/>
+                <constraint firstAttribute="trailing" secondItem="3RA-cw-SSE" secondAttribute="trailing" constant="12" id="hlL-Yz-ZvC"/>
+                <constraint firstItem="u3s-b7-T57" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="nXi-XY-Hyz"/>
+                <constraint firstAttribute="bottom" secondItem="4L5-6s-lvI" secondAttribute="bottom" id="oZJ-1b-Uu6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="257.5" y="178"/>
+        </view>
+    </objects>
+</document>
